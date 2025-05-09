@@ -18,6 +18,10 @@ const Index = () => {
     setFormData(data);
     setIsSubmitted(true);
     console.log("Form submitted:", data);
+    
+    // The form data is ready to be used for API calls
+    // Example API call would go here, using the data.url, data.gender, and data.type
+    // You would typically use this data with fetch() or axios to call your API
   };
 
   return (

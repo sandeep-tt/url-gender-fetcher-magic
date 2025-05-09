@@ -20,7 +20,7 @@ interface FormSectionProps {
 const FormSection = ({ onSubmit }: FormSectionProps) => {
   const [url, setUrl] = useState("");
   const [gender, setGender] = useState("male");
-  const [type, setType] = useState("personal");
+  const [type, setType] = useState("Magician");
   const [urlError, setUrlError] = useState("");
 
   const validateUrl = (value: string): boolean => {
@@ -101,10 +101,10 @@ const FormSection = ({ onSubmit }: FormSectionProps) => {
               <SelectValue placeholder="Select a type" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="personal">Personal</SelectItem>
-              <SelectItem value="business">Business</SelectItem>
-              <SelectItem value="educational">Educational</SelectItem>
-              <SelectItem value="other">Other</SelectItem>
+              <SelectItem value="Magician">Magician</SelectItem>
+              <SelectItem value="Disney">Disney</SelectItem>
+              <SelectItem value="Boxer">Boxer</SelectItem>
+              <SelectItem value="Astronaut">Astronaut</SelectItem>
             </SelectContent>
           </Select>
         </div>
